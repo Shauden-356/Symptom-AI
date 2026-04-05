@@ -1,0 +1,66 @@
+{
+  "_readme": "HOW TO ADD A TAB: Add a new object to the 'categories' array. 'id' must be unique (no spaces). 'label' is the tab text shown to the user. 'icon' is any unicode character. 'keywords' is a list of strings — any symptom whose ID contains one of these strings will appear under this tab. Order in this array = order shown in the UI.",
+
+  "categories": [
+    {
+      "id": "general",
+      "label": "General",
+      "icon": "◈",
+      "keywords": ["fatigue", "fever", "high_fever", "mild_fever", "weight", "chills", "sweating", "malaise", "restlessness", "lethargy", "shivering", "dehydration", "obesity"]
+    },
+    {
+      "id": "head",
+      "label": "Head & Mind",
+      "icon": "◉",
+      "keywords": ["headache", "dizziness", "loss_of_balance", "altered_sensorium", "spinning", "visual", "blurred", "depression", "irritability", "anxiety", "lack_of_concentration", "stiff_neck", "neck_pain", "mood_swings", "slurred_speech"]
+    },
+    {
+      "id": "chest",
+      "label": "Chest & Heart",
+      "icon": "♡",
+      "keywords": ["chest_pain", "breathlessness", "cough", "phlegm", "mucoid", "blood_in_sputum", "rusty_sputum", "congestion", "palpitations", "fast_heart_rate"]
+    },
+    {
+      "id": "digestive",
+      "label": "Digestive",
+      "icon": "◎",
+      "keywords": ["nausea", "vomiting", "diarrhoea", "constipation", "abdominal", "stomach", "loss_of_appetite", "indigestion", "acidity", "belly", "passage_of_gases", "bloody_stool", "pain_during_bowel", "pain_in_anal", "irritation_in_anus", "internal_itching"]
+    },
+    {
+      "id": "skin",
+      "label": "Skin",
+      "icon": "◇",
+      "keywords": ["itching", "skin_rash", "nodal_skin_eruptions", "yellowish_skin", "red_spots", "pus_filled", "blackheads", "skin_peeling", "silver_like", "blister", "red_sore", "yellow_crust", "bruising", "scurring", "dischromic", "dryness"]
+    },
+    {
+      "id": "urinary",
+      "label": "Urinary",
+      "icon": "◁",
+      "keywords": ["burning_micturition", "dark_urine", "yellow_urine", "foul_smell", "continuous_feel", "spotting_urination", "bladder", "polyuria"]
+    },
+    {
+      "id": "pain",
+      "label": "Pain & Joints",
+      "icon": "◆",
+      "keywords": ["joint_pain", "muscle_pain", "back_pain", "knee_pain", "hip_joint", "swelling_joints", "movement_stiffness", "painful_walking", "muscle_weakness", "muscle_wasting", "weakness_in_limbs", "cramps", "unsteadiness"]
+    },
+    {
+      "id": "eyes",
+      "label": "Eyes & Face",
+      "icon": "◌",
+      "keywords": ["yellowing_of_eyes", "watering_from_eyes", "redness_of_eyes", "puffy_face", "pain_behind_the_eyes", "loss_of_smell", "sinus_pressure", "runny_nose", "throat_irritation", "swelled_lymph", "patches_in_throat", "ulcers_on_tongue", "sunken_eyes"]
+    },
+    {
+      "id": "metabolic",
+      "label": "Metabolic",
+      "icon": "⬡",
+      "keywords": ["excessive_hunger", "increased_appetite", "irregular_sugar_level", "weight_gain", "cold_hands", "enlarged_thyroid", "brittle_nails", "swollen_extremities", "abnormal_menstruation", "drying_and_tingling", "fluid_overload", "swelling_of_stomach", "renal_failure", "acute_liver_failure", "stomach_bleeding"]
+    },
+    {
+      "id": "history",
+      "label": "History",
+      "icon": "◫",
+      "keywords": ["family_history", "extra_marital_contacts", "receiving_blood", "receiving_unsterile", "history_of_alcohol", "prominent_veins", "swollen_legs", "swollen_blood", "inflammatory_nails", "small_dents_in_nails"]
+    }
+  ]
+}
