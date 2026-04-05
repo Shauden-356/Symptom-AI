@@ -1,0 +1,253 @@
+{
+  "_readme": "HOW TO ADD A DISEASE: Add a new entry under 'diseases'. Give it a name, a list of symptom IDs (use snake_case), a severity (mild/moderate/severe/critical), and advice text. Any new symptom ID you use is automatically added to the model — just run 'python train.py' afterwards.",
+
+  "diseases": {
+
+    "Fungal infection": {
+      "symptoms": ["itching", "skin_rash", "nodal_skin_eruptions", "dischromic_patches"],
+      "severity": "mild",
+      "advice": "Keep affected areas clean and dry. Antifungal creams may help. Consult a dermatologist if persistent."
+    },
+
+    "Allergy": {
+      "symptoms": ["continuous_sneezing", "shivering", "chills", "watering_from_eyes"],
+      "severity": "mild",
+      "advice": "Avoid known allergens. Antihistamines may relieve symptoms. See an allergist for persistent issues."
+    },
+
+    "GERD": {
+      "symptoms": ["stomach_pain", "acidity", "ulcers_on_tongue", "vomiting", "cough", "chest_pain"],
+      "severity": "moderate",
+      "advice": "Avoid spicy/acidic foods, eat smaller meals, don't lie down after eating. Consult a gastroenterologist."
+    },
+
+    "Chronic cholestasis": {
+      "symptoms": ["itching", "vomiting", "yellowish_skin", "nausea", "loss_of_appetite", "abdominal_pain", "yellowing_of_eyes"],
+      "severity": "severe",
+      "advice": "Requires medical evaluation. See a hepatologist promptly."
+    },
+
+    "Drug Reaction": {
+      "symptoms": ["itching", "skin_rash", "stomach_pain", "burning_micturition", "spotting_urination"],
+      "severity": "severe",
+      "advice": "Stop the suspected medication immediately and seek emergency medical care."
+    },
+
+    "Peptic ulcer disease": {
+      "symptoms": ["vomiting", "indigestion", "loss_of_appetite", "abdominal_pain", "passage_of_gases", "internal_itching"],
+      "severity": "moderate",
+      "advice": "Avoid NSAIDs and alcohol. See a gastroenterologist for proper diagnosis and treatment."
+    },
+
+    "AIDS": {
+      "symptoms": ["muscle_wasting", "patches_in_throat", "high_fever", "extra_marital_contacts"],
+      "severity": "severe",
+      "advice": "Seek immediate medical care. Antiretroviral therapy can manage the condition effectively."
+    },
+
+    "Diabetes": {
+      "symptoms": ["fatigue", "weight_loss", "restlessness", "lethargy", "irregular_sugar_level", "blurred_and_distorted_vision", "obesity", "excessive_hunger", "increased_appetite", "polyuria"],
+      "severity": "moderate",
+      "advice": "Monitor blood sugar levels, maintain a healthy diet and exercise. See an endocrinologist."
+    },
+
+    "Gastroenteritis": {
+      "symptoms": ["vomiting", "sunken_eyes", "dehydration", "diarrhoea"],
+      "severity": "mild",
+      "advice": "Stay hydrated. Rest and allow the illness to pass. Seek care if symptoms worsen."
+    },
+
+    "Bronchial Asthma": {
+      "symptoms": ["fatigue", "cough", "high_fever", "breathlessness", "family_history", "mucoid_sputum"],
+      "severity": "moderate",
+      "advice": "Identify and avoid triggers. Use prescribed inhalers. Have an action plan for attacks."
+    },
+
+    "Hypertension": {
+      "symptoms": ["headache", "chest_pain", "dizziness", "loss_of_balance", "lack_of_concentration"],
+      "severity": "moderate",
+      "advice": "Reduce salt intake, exercise regularly, manage stress. Monitor BP and consult a cardiologist."
+    },
+
+    "Migraine": {
+      "symptoms": ["acidity", "indigestion", "headache", "blurred_and_distorted_vision", "excessive_hunger", "stiff_neck", "depression", "irritability", "visual_disturbances"],
+      "severity": "mild",
+      "advice": "Rest in a dark quiet room. Stay hydrated. Consult a neurologist for recurring migraines."
+    },
+
+    "Cervical spondylosis": {
+      "symptoms": ["back_pain", "weakness_in_limbs", "neck_pain", "dizziness", "loss_of_balance"],
+      "severity": "mild",
+      "advice": "Physical therapy and neck exercises can help. Consult an orthopedic specialist."
+    },
+
+    "Paralysis (brain hemorrhage)": {
+      "symptoms": ["vomiting", "headache", "weakness_in_limbs", "altered_sensorium"],
+      "severity": "critical",
+      "advice": "EMERGENCY: Call 911 immediately. This requires urgent hospital care."
+    },
+
+    "Jaundice": {
+      "symptoms": ["itching", "vomiting", "fatigue", "weight_loss", "high_fever", "yellowish_skin", "dark_urine", "abdominal_pain"],
+      "severity": "severe",
+      "advice": "Seek immediate medical evaluation to determine the underlying cause."
+    },
+
+    "Malaria": {
+      "symptoms": ["chills", "vomiting", "high_fever", "sweating", "headache", "nausea", "diarrhoea", "muscle_pain"],
+      "severity": "severe",
+      "advice": "Seek immediate medical treatment. Antimalarial medications must be prescribed by a doctor."
+    },
+
+    "Chicken pox": {
+      "symptoms": ["itching", "skin_rash", "fatigue", "lethargy", "high_fever", "headache", "loss_of_appetite", "mild_fever", "swelled_lymph_nodes", "malaise", "red_spots_over_body"],
+      "severity": "mild",
+      "advice": "Rest, stay hydrated, avoid scratching. Keep away from vulnerable individuals."
+    },
+
+    "Dengue": {
+      "symptoms": ["skin_rash", "chills", "joint_pain", "vomiting", "fatigue", "high_fever", "headache", "nausea", "loss_of_appetite", "pain_behind_the_eyes", "back_pain", "muscle_pain", "red_spots_over_body"],
+      "severity": "severe",
+      "advice": "Stay hydrated, rest, take acetaminophen (NOT ibuprofen). Seek hospital care for severe cases."
+    },
+
+    "Typhoid": {
+      "symptoms": ["chills", "vomiting", "fatigue", "high_fever", "headache", "nausea", "constipation", "abdominal_pain", "diarrhoea", "toxic_look_(typhos)", "belly_pain"],
+      "severity": "severe",
+      "advice": "Requires antibiotic treatment prescribed by a doctor. Maintain strict hygiene."
+    },
+
+    "Hepatitis A": {
+      "symptoms": ["joint_pain", "vomiting", "yellowish_skin", "dark_urine", "nausea", "loss_of_appetite", "abdominal_pain", "diarrhoea", "mild_fever", "yellowing_of_eyes", "muscle_pain"],
+      "severity": "moderate",
+      "advice": "Rest and stay hydrated. Most cases resolve on their own. See a doctor."
+    },
+
+    "Hepatitis B": {
+      "symptoms": ["itching", "fatigue", "lethargy", "yellowish_skin", "dark_urine", "loss_of_appetite", "abdominal_pain", "yellow_urine", "yellowing_of_eyes", "malaise", "receiving_blood_transfusion", "receiving_unsterile_injections"],
+      "severity": "severe",
+      "advice": "Consult a hepatologist. Antiviral medications may be needed. Vaccination available."
+    },
+
+    "Hepatitis C": {
+      "symptoms": ["fatigue", "yellowish_skin", "nausea", "loss_of_appetite", "yellowing_of_eyes", "family_history"],
+      "severity": "severe",
+      "advice": "Modern antiviral treatments are very effective. Consult a hepatologist promptly."
+    },
+
+    "Hepatitis D": {
+      "symptoms": ["joint_pain", "vomiting", "fatigue", "yellowish_skin", "dark_urine", "nausea", "loss_of_appetite", "abdominal_pain", "yellowing_of_eyes"],
+      "severity": "severe",
+      "advice": "Only occurs with Hepatitis B. Requires specialized medical treatment."
+    },
+
+    "Hepatitis E": {
+      "symptoms": ["joint_pain", "vomiting", "fatigue", "high_fever", "yellowish_skin", "dark_urine", "nausea", "loss_of_appetite", "abdominal_pain", "yellowing_of_eyes", "acute_liver_failure", "coma", "stomach_bleeding"],
+      "severity": "severe",
+      "advice": "Mostly self-limiting but can be severe in pregnant women. Seek medical care."
+    },
+
+    "Alcoholic hepatitis": {
+      "symptoms": ["vomiting", "yellowish_skin", "abdominal_pain", "swelling_of_stomach", "history_of_alcohol_consumption", "fluid_overload", "renal_failure"],
+      "severity": "severe",
+      "advice": "Stop alcohol consumption immediately. Seek urgent medical care."
+    },
+
+    "Tuberculosis": {
+      "symptoms": ["chills", "vomiting", "fatigue", "weight_loss", "cough", "high_fever", "breathlessness", "sweating", "loss_of_appetite", "mild_fever", "swelled_lymph_nodes", "malaise", "phlegm", "blood_in_sputum", "chest_pain"],
+      "severity": "severe",
+      "advice": "Requires a strict course of antibiotics for 6+ months. See a pulmonologist immediately."
+    },
+
+    "Common Cold": {
+      "symptoms": ["continuous_sneezing", "chills", "fatigue", "cough", "high_fever", "headache", "swelled_lymph_nodes", "malaise", "phlegm", "throat_irritation", "redness_of_eyes", "sinus_pressure", "runny_nose", "congestion", "chest_pain", "loss_of_smell", "muscle_pain"],
+      "severity": "mild",
+      "advice": "Rest, stay hydrated, and use OTC medications for symptom relief. Wash hands frequently."
+    },
+
+    "Pneumonia": {
+      "symptoms": ["chills", "fatigue", "cough", "high_fever", "breathlessness", "sweating", "malaise", "phlegm", "blood_in_sputum", "rusty_sputum"],
+      "severity": "severe",
+      "advice": "Seek medical care promptly. May require antibiotics or hospitalization."
+    },
+
+    "Dimorphic hemorrhoids (piles)": {
+      "symptoms": ["constipation", "pain_during_bowel_movements", "pain_in_anal_region", "bloody_stool", "irritation_in_anus"],
+      "severity": "mild",
+      "advice": "High-fiber diet, adequate hydration. Consult a gastroenterologist for treatment options."
+    },
+
+    "Heart attack": {
+      "symptoms": ["vomiting", "breathlessness", "sweating", "chest_pain"],
+      "severity": "critical",
+      "advice": "EMERGENCY: Call 911 immediately. Every second counts."
+    },
+
+    "Varicose veins": {
+      "symptoms": ["fatigue", "cramps", "bruising", "obesity", "swollen_legs", "swollen_blood_vessels", "prominent_veins_on_calf"],
+      "severity": "mild",
+      "advice": "Elevate legs, wear compression stockings. Consult a vascular specialist for treatment options."
+    },
+
+    "Hypothyroidism": {
+      "symptoms": ["fatigue", "weight_gain", "cold_hands_and_feets", "mood_swings", "lethargy", "dryness", "puffy_face_and_eyes", "enlarged_thyroid", "brittle_nails", "swollen_extremities", "depression", "irritability", "abnormal_menstruation"],
+      "severity": "moderate",
+      "advice": "Hormone replacement therapy is effective. Regular monitoring by an endocrinologist needed."
+    },
+
+    "Hyperthyroidism": {
+      "symptoms": ["fatigue", "mood_swings", "weight_loss", "restlessness", "sweating", "diarrhoea", "fast_heart_rate", "excessive_hunger", "muscle_weakness", "irritability", "abnormal_menstruation"],
+      "severity": "moderate",
+      "advice": "Medications, radioiodine therapy, or surgery may be needed. See an endocrinologist."
+    },
+
+    "Hypoglycemia": {
+      "symptoms": ["vomiting", "fatigue", "anxiety", "sweating", "headache", "nausea", "blurred_and_distorted_vision", "excessive_hunger", "drying_and_tingling_lips", "slurred_speech", "irritability", "palpitations"],
+      "severity": "moderate",
+      "advice": "Consume fast-acting sugar immediately. Monitor blood glucose and consult a doctor."
+    },
+
+    "Osteoarthritis": {
+      "symptoms": ["joint_pain", "neck_pain", "knee_pain", "hip_joint_pain", "swelling_joints", "painful_walking"],
+      "severity": "mild",
+      "advice": "Exercise, weight management, and physical therapy help. Consult a rheumatologist."
+    },
+
+    "Arthritis": {
+      "symptoms": ["muscle_weakness", "stiff_neck", "swelling_joints", "movement_stiffness", "painful_walking"],
+      "severity": "moderate",
+      "advice": "Anti-inflammatory medications and physical therapy can help. See a rheumatologist."
+    },
+
+    "Vertigo (Paroxysmal Positional Vertigo)": {
+      "symptoms": ["vomiting", "headache", "nausea", "spinning_movements", "loss_of_balance", "unsteadiness"],
+      "severity": "mild",
+      "advice": "Epley maneuver may help. Consult an ENT specialist for diagnosis."
+    },
+
+    "Acne": {
+      "symptoms": ["skin_rash", "pus_filled_pimples", "blackheads", "scurring"],
+      "severity": "mild",
+      "advice": "Keep skin clean, avoid touching face. Consult a dermatologist for persistent acne."
+    },
+
+    "Urinary tract infection": {
+      "symptoms": ["burning_micturition", "bladder_discomfort", "foul_smell_of_urine", "continuous_feel_of_urine"],
+      "severity": "moderate",
+      "advice": "Drink plenty of water. Antibiotics are usually required — see a doctor."
+    },
+
+    "Psoriasis": {
+      "symptoms": ["skin_rash", "joint_pain", "skin_peeling", "silver_like_dusting", "small_dents_in_nails", "inflammatory_nails"],
+      "severity": "mild",
+      "advice": "Moisturize regularly. Consult a dermatologist for treatment options including topical and systemic therapies."
+    },
+
+    "Impetigo": {
+      "symptoms": ["skin_rash", "high_fever", "blister", "red_sore_around_nose", "yellow_crust_ooze"],
+      "severity": "mild",
+      "advice": "Antibiotic cream or oral antibiotics required. Keep area clean and avoid spreading."
+    }
+
+  }
+}
